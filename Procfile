@@ -1,0 +1,1 @@
+web: gunicorn employeemaster.wsgi --log-file -
