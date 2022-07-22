@@ -12,4 +12,5 @@ class Employee(models.Model):
     address = models.CharField(max_length=10, null=True,blank=True)
     image = models.ImageField(upload_to='uploads', blank=True, null=True)
     text = models.CharField(max_length=1000, null=True, blank=True)
+    binary = models.BinaryField(max_length=1000, null=True, blank=True)
 
