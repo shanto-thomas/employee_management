@@ -22,13 +22,13 @@ from django.conf.urls.static import static
 from employeemaster import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path(r'', views.loginhome),
-    path(r'login', views.login),
-    path(r'employeehome', views.employeehome),
-    path(r'addpage', views.addpage),
-    path(r'addingemployee', views.addingemployee)
+                  path('admin/', admin.site.urls),
+                  path(r'', views.loginhome),
+                  path(r'login', views.login),
+                  path(r'employeehome', views.employeehome),
+                  path(r'addpage', views.addpage),
+                  path(r'addingemployee', views.addingemployee)
 
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
